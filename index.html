@@ -8,36 +8,42 @@
 <body>
     <header>
       <nav>
-        <ul>
-            <li>
+        <div class="nav">
+            <div class="nav-logo">
                 Terra&Time 
-                <img src="images/ceramic_mug_logo.jpg">
-            </li>
-            <div class="side-nav">
-            <li>Products</li>
-            <li>New</li>
-            <li>About</li>
-            <li>Contact</li>
+                <img src="images/mug-logo.png">
             </div>
-        </ul>
+            <div class="side-nav">
+            <a href="#">Products</a>
+            <a href="#">New</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
       </nav>  
     </header>
     <main>
-    <h1>From Our Studio To Your Home</h1>
-        <p>Our hand-crafted ceramics include thrown, hand-built, and slab ceramics. Each vessel is built with love and patience by our skilled ceramists.</p>
-    <button data-modal-target="#modal"> Shop Ceramics </button>
-    <div class="hero-image">
-        <img src="images/ceramic_wheel_bowls_sm.jpg" />
-    </div>
+      <div class="hero-main">
+        <div class="hero-text">
+          <h1>From Our Studio </h1> 
+          <h1>To Your Home</h1>
+            <p>Our hand-crafted ceramics include thrown, hand-built, and slab ceramics. <br> Each vessel is built with love and patience by our skilled ceramists.</p>
+          <button data-modal-target="#modal"> Shop Ceramics </button>
+          <div class="wrapper-wheel"> <img src="images/ceramic_wheel_bowls_sm.png" /> </div>
+        </div>
+      </div>
     <div class="modal" id="modal"> 
         <div class="modal-header">
-          <div class="title">Buy One, Get One <strong>30% Off</strong></div>
+          <div class="title">Buy One, Get One <br/> <strong>30% Off</strong></div>
           <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
           Receive 30% off your next mug purchase when you buy one or more of our mugs.
         </div>
-      </div>
+        <div class="modal-button">
+          <button class="accept-button"> Accept Offer </button>
+        </div>
+    </div>
       <div id="overlay"> </div>
       <script src="script.js"></script>
      </main>

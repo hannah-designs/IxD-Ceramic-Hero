@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("reset.css");
 
 .App {
   font-family: sans-serif;
@@ -10,11 +13,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
+  border: none;
   border-radius: 10px;
   z-index: 10;
-  background-color: white;
-  width: 500px; 
+  background-color: #FFFEFB;
+  width: 900px; 
+  height: 560px;
   max-width: 80%;
 }
 
@@ -27,25 +31,63 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+
 }
 
 .modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 6.4rem;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  color: #657154;
+  margin-left:115px;
+  margin-top: 82px;
+  text-align: center;
+  width: 670px;
 }
 
-.modal-header .close-button {
+.modal-header strong {
+  font-size: 12.5rem;
+}
+
+.close-button {  
+  position:absolute;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
-  font-weight: bold; 
+  font-size: 4.5rem;
+  font-weight: 400; 
+  width: 60px;
+  top: 38px;
+  right: 40px;
+  margin:0;
+  color: #6C90AD;
+}
+
+.modal-button .accept-button {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6C90AD;
+  background-color: #FFFEFB;
+  border:3px solid #6C90AD;
+  border-radius: 7px;
+  padding: 10px 167px 10px 167px;
+  text-align: center;
+  margin-left: 210px;
+  margin-top: 44px;
 }
 
 .modal-body {
   padding: 10px 15px;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  color: #657154;
+  width: 670px;
+  margin-left: 115px;
+  text-align: center;
 }
 
 #overlay {
@@ -63,4 +105,124 @@
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.wrapper-wheel img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.wrapper-wheel {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+  width: 1367px;
+  transform: translate(50%, 50%);
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  background-color:#FFFEFB;
+}
+
+.nav {
+  display:flex;
+  flex-direction: row;
+  background-color: #9D856C;
+  justify-content: space-between;
+  width: 1512px;
+  height: 70px;
+  margin:0;
+  padding:0;
+}
+
+.side-nav > a {
+  margin-left: 50px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.side-nav {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-style:normal;
+  font-size:2rem;
+  color:#FFFEFB;
+  margin-right: 76px;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-style: normal;
+  color:#FFFEFB;
+  margin-left: 76px;
+  align-items: center;
+}
+
+.nav-logo img{
+  width: 38px;
+  height: 25px;
+  padding-left: 8.87px;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight:900;
+  font-style: normal;
+  font-size: 9.5rem;
+  color: #657154;
+  line-height: 9.8rem;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #404040;
+  line-height: 2.3rem;
+}
+
+html {
+   font-size: 10px;
+}
+
+.hero-text button{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFEFB;
+  margin-top: 50px;
+  background-color: #6C90AD;
+  border: none;
+  padding: 15px 100px 15px 100px;
+}
+.hero-text {
+  margin-top: 205px;
+  margin-left: 76px;
+}
+
+.hero-text p {
+  margin-top: 25.5px;
+}
+
+.hero-main {
+  position: relative;
+  overflow:hidden;
+  min-height: calc(100vh - 70px);
 }
