@@ -111,6 +111,7 @@
   height: auto;
   width: 100%;
   display: block;
+  animation: rotate 9s ease-in-out infinite;
 }
 
 .wrapper-wheel {
@@ -122,6 +123,20 @@
   padding: 0;
   margin: 0;
 }
+
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+
+  20% { transform: rotate(-140deg);}
+  33% { transform: rotate(-140deg);}
+
+  53% {transform: rotate(-260deg);}
+  66% { transform: rotate(-260deg);}
+
+  86% {transform: rotate(-360deg);}
+  100% { transform: rotate(-360deg);}
+}
+
 
 *{
   box-sizing: border-box;
@@ -210,6 +225,7 @@ html {
   margin-top: 50px;
   background-color: #6C90AD;
   border: none;
+  border-radius: 7px;
   padding: 15px 100px 15px 100px;
 }
 .hero-text {
