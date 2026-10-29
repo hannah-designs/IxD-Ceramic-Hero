@@ -26,6 +26,26 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+.modal-image-box{
+  width: 76px;
+  height: 70px;
+  background-image: url(images/clay-lump.png);
+  margin: 33px 412px  13px 412px;
+
+  animation: fade 4s ease-in-out infinite;
+}
+
+@keyframes fade {
+  33% {background-image: url(images/clay-cup.png);}
+  43% {background-image: url(images/clay-cup.png);}
+
+  66% {background-image: url(images/clay-glaze.png);}
+  74% {background-image: url(images/clay-glaze.png);}
+
+  90% {background-image: url(images/clay-lump.png);}
+  100% {background-image: url(images/clay-lump.png);}
+}
+
 .modal-header {
   padding: 10px 15px;
   display: flex;
@@ -40,7 +60,6 @@
   font-family: "DM Sans", sans-serif;
   color: #657154;
   margin-left:115px;
-  margin-top: 82px;
   text-align: center;
   width: 670px;
 }
@@ -75,7 +94,7 @@
   padding: 10px 167px 10px 167px;
   text-align: center;
   margin-left: 210px;
-  margin-top: 44px;
+  margin-top: 36px;
 }
 
 .modal-body {
