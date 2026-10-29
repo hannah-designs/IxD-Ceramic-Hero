@@ -30,7 +30,7 @@
   width: 76px;
   height: 70px;
   background-image: url(images/clay-lump.png);
-  margin: 33px 412px  13px 412px;
+  margin: 33px 405px  13px 419px;
 
   animation: fade 4s ease-in-out infinite;
 }
@@ -51,21 +51,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 
 }
 
 .modal-header .title {
   font-size: 6.4rem;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 72px;
   font-family: "DM Sans", sans-serif;
   color: #657154;
   margin-left:115px;
   text-align: center;
   width: 670px;
+  padding: 0%;
 }
 
 .modal-header strong {
-  font-size: 12.5rem;
+  font-size: 13.5rem;
+  line-height: 12.5rem;
+  font-weight: 700;
 }
 
 .close-button {  
@@ -89,23 +94,25 @@
   font-weight: 700;
   color: #6C90AD;
   background-color: #FFFEFB;
-  border:3px solid #6C90AD;
-  border-radius: 7px;
+  border:6px solid #6C90AD;
+  border-radius: 6px;
   padding: 10px 167px 10px 167px;
   text-align: center;
   margin-left: 210px;
   margin-top: 36px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal-body {
   padding: 10px 15px;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 25px;
+  line-height: 28px;
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
   color: #657154;
   width: 670px;
   margin-left: 115px;
+ 
   text-align: center;
 }
 
@@ -164,6 +171,7 @@
 body{
   margin:0;
   background-color:#FFFEFB;
+  background-image: url(images/texture-bg.jpg);
 }
 
 .nav {
@@ -246,6 +254,7 @@ html {
   border: none;
   border-radius: 7px;
   padding: 15px 100px 15px 100px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .hero-text {
   margin-top: 205px;
